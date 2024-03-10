@@ -39,7 +39,7 @@ jobs:
           node-version: 18
       - uses: DeLaGuardo/setup-clojure@12.5
         with:
-          cli: 1.11
+          cli: 1.11.2.1446
       - uses: actions/configure-pages@v4
       - run: "yarn"
       - run: "yarn build"
