@@ -1,0 +1,14 @@
+{:paths ["src"]
+ :deps
+ {}
+ :aliases
+ {:cljs
+  {:extra-deps
+   {akiroz.re-frame/storage {:mvn/version "0.1.4"}
+    alandipert/storage-atom {:mvn/version "2.0.0"}
+    com.github.parlir/cljss {:git/sha "a4b3c8716e269ba07246cf6f67d75162fc0b8b8f"}
+    com.taoensso/tempura {:mvn/version "1.5.3"}
+    reagent/reagent {:mvn/version "0.8.1"}
+    re-frame/re-frame {:mvn/version "1.4.3"}
+    thheller/shadow-cljs {:mvn/version "2.27.5"}
+    dev.weavejester/medley {:mvn/version "1.7.0"}}}}}
