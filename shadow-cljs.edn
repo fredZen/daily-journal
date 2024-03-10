@@ -1,11 +1,10 @@
 {:deps {:aliases [:cljs]}
  :builds
- {:app {:asset-path "/js"
+ {:app {:asset-path "js"
         :modules {:main {:init-fn app.core/main}}
+        :module-hash-names true
         :output-dir "public/js"
-        :target :browser}
-  :test {:ns-regexp "app.cards"
-         :output-to "out/test.js"
-         :target :node-test}}
+        :target :browser
+        :build-hooks [(shadow.html/copy-file "html/index.html" "public/index.html")]}}
  :dev-http {3000 "public"}
  :nrepl {:port 3333}}
