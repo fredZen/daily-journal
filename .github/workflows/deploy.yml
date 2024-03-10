@@ -37,7 +37,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 18
-      - uses: DeLaGuardo/setup-clojure@12
+      - uses: DeLaGuardo/setup-clojure@12.5
         with:
           cli: 1.11
       - uses: actions/configure-pages@v4
